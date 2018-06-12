@@ -13,6 +13,7 @@
 		1215F3AB20CE3C1B001C8877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1215F3A920CE3C1B001C8877 /* LaunchScreen.storyboard */; };
 		1215F3B920CE5D2F001C8877 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1215F3B820CE5D2F001C8877 /* Model.swift */; };
 		1215F3BB20CE5E29001C8877 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1215F3BA20CE5E29001C8877 /* Presenter.swift */; };
+		5F34CE89321B1381BA88AC66 /* Pods_Viper_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A75B101E83171197A484EE /* Pods_Viper_practice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		1215F3AC20CE3C1B001C8877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1215F3B820CE5D2F001C8877 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		1215F3BA20CE5E29001C8877 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		31F8C4617FDB2B86D73E7186 /* Pods-Viper-practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper-practice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viper-practice/Pods-Viper-practice.debug.xcconfig"; sourceTree = "<group>"; };
+		5473097688DEFFB6EEA44C0C /* Pods-Viper-practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper-practice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Viper-practice/Pods-Viper-practice.release.xcconfig"; sourceTree = "<group>"; };
+		86A75B101E83171197A484EE /* Pods_Viper_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viper_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F34CE89321B1381BA88AC66 /* Pods_Viper_practice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				1215F39F20CE3C1A001C8877 /* Viper-practice */,
 				1215F39E20CE3C1A001C8877 /* Products */,
+				B68D292BE4F0C00C99973D23 /* Pods */,
+				C04792A867A41DA4895A53D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +114,23 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		B68D292BE4F0C00C99973D23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31F8C4617FDB2B86D73E7186 /* Pods-Viper-practice.debug.xcconfig */,
+				5473097688DEFFB6EEA44C0C /* Pods-Viper-practice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C04792A867A41DA4895A53D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86A75B101E83171197A484EE /* Pods_Viper_practice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1215F3AF20CE3C1B001C8877 /* Build configuration list for PBXNativeTarget "Viper-practice" */;
 			buildPhases = (
+				99E335127A632682939E4891 /* [CP] Check Pods Manifest.lock */,
 				1215F39920CE3C1A001C8877 /* Sources */,
 				1215F39A20CE3C1A001C8877 /* Frameworks */,
 				1215F39B20CE3C1A001C8877 /* Resources */,
+				14FDE17E474C58BD82E2CD58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +197,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14FDE17E474C58BD82E2CD58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Viper-practice/Pods-Viper-practice-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Viper-practice/Pods-Viper-practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99E335127A632682939E4891 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Viper-practice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1215F39920CE3C1A001C8877 /* Sources */ = {
@@ -314,15 +379,13 @@
 		};
 		1215F3B020CE3C1B001C8877 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31F8C4617FDB2B86D73E7186 /* Pods-Viper-practice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F3NL8W8JS6;
 				INFOPLIST_FILE = "Viper-practice/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IndividualProject.Viper-practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -332,15 +395,13 @@
 		};
 		1215F3B120CE3C1B001C8877 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5473097688DEFFB6EEA44C0C /* Pods-Viper-practice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F3NL8W8JS6;
 				INFOPLIST_FILE = "Viper-practice/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "IndividualProject.Viper-practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
